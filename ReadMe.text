@@ -1,0 +1,48 @@
+Create Files: Make sure you have three separate files named Main.java, ProducerClient.java, and ConsumerClient.java. You can use a text editor to create these files and paste the corresponding code into each file.
+
+Open Terminal (Command Prompt): Open a terminal or command prompt on your computer. Use this terminal to navigate to the directory where you have saved these files.
+
+sh
+Copy code
+cd path/to/your/directory
+Replace path/to/your/directory with the actual path to the directory where your files are located.
+
+Compile Files: First, compile the ProducerClient.java and ConsumerClient.java files:
+
+sh
+Copy code
+javac ProducerClient.java
+javac ConsumerClient.java
+Then, compile the Main.java file:
+
+sh
+Copy code
+javac Main.java
+After compiling, you should see .class files generated for each .java file in the same directory.
+
+Run the Server (Main): Now, run the Main class, which acts as the server. It will listen for connections from the producer and consumer clients:
+
+sh
+Copy code
+java Main
+The server will start and wait for connections on port 12345.
+
+Open Two Additional Terminals: Open two more terminal windows (or command prompts) to run the producer and consumer clients.
+
+Run Producer Client: In one of the additional terminals, run the producer client:
+
+sh
+Copy code
+java ProducerClient
+This client will connect to the server, simulate producing items, and send them to the server.
+
+Run Consumer Client: In the second additional terminal, run the consumer client:
+
+sh
+Copy code
+java ConsumerClient
+This client will also connect to the server, simulate consuming items, and receive items from the server.
+
+Observing Output: The server and clients will display output indicating the items produced and consumed. You will see the interaction between the producer, consumer, and server.
+
+Stopping the Program: To stop the program, you can close the terminal windows where the server, producer client, and consumer client are running. The program will exit gracefully.
