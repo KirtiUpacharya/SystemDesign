@@ -1,1 +1,6 @@
 .DS_Store
+.idea/
+OrderService.zip
+OrderService/
+product-service.zip
+product-service/
